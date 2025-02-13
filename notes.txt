@@ -89,11 +89,25 @@ resolve: {
 
 
 
-1.2 Декомпозиция конфига. Опции конфигурации
+1.2. Декомпозиция конфига. Опции конфигурации
+
+Разделили webpack кофинг на функции:
+- buildLoaders
+- buildPlugins
+- buildResolvers
+- buildWebpackConfig
+в buildWebpackConfig передаём BuildOptions
 
 
 
+1.3. Webpack-dev-server. Переменные окружения (env)
 
+Установили и настроили webpack-dev-server
+
+Добавили скрипты:
+"start": "webpack serve --env port=3000",
+"build:prod": "webpack --env mode=production",
+"build:dev": "webpack --env mode=development"
 
 
 
