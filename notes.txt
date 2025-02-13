@@ -1,0 +1,100 @@
+1. Webpack. Введение в арх-ру. Code splitting. Css Modules
+1.1. Начало разработки Основы Webpack. Добавляем TypeScript Метка
+
+npm init -y - инициализация проекта с подтверждением дефолтных настроек
+
+npm install webpack webpack-cli --save-dev - установка webpack
+
+создаем webpack.config.js
+///////////////////////////////////////////////////////////////
+// webpack.config.js
+///////////////////////////////////////////////////////////////
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
+
+module.exports = {
+  mode: 'development',
+  entry: path.resolve(__dirname, 'src', 'index.ts'),
+  output: {
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'build'),
+    clean: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'public', 'index.html')
+    }),
+    new webpack.ProgressPlugin()
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+}
+///////////////////////////////////////////////////////////////
+
+HtmlWebpackPlugin - добавляет в сборку index.html и подключает скрипт index.js
+webpack - запускает сборку	
+ts-loader - позволяет загружать ts файлы
+resolve: {
+	extensions: ['.tsx', '.ts', '.js'], - позволяет импортировать перечислыенные файлы без написания .tsx, .ts, .js
+}
+
+///////////////////////////////////////////////////////////////
+// tsconfig.json
+///////////////////////////////////////////////////////////////
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext", 
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true, 
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
+
+"allowSyntheticDefaultImports": true - позволяет делать дефолтный импорт (import path from 'path' вместо import * as path from 'path')
+"esModuleInterop": true - позволяет делать стандартный js import вместо require()
+///////////////////////////////////////////////////////////////
+
+Установили npm пакеты:
+"devDependencies": {
+	"@types/node": "^22.13.1",
+	"@types/webpack": "^5.28.5",
+	"html-webpack-plugin": "^5.5.0",
+	"ts-loader": "^9.5.2",
+	"ts-node": "^10.9.2",
+	"typescript": "^5.7.3",
+	"webpack": "^5.69.1",
+	"webpack-cli": "^4.9.2"
+} 
+
+
+
+1.2 Декомпозиция конфига. Опции конфигурации
+
+
+
+
+
+
+
+
