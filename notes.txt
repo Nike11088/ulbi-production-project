@@ -113,4 +113,28 @@ resolve: {
 
 
 
+1.4 Подключаем React и настраиваем css в webpack метка
+
+Подключили библиотеки react и react-dom
+Подключил sass loader
+
+
+
+1.5 Настраиваем css modules
+
+БЭМ - блок элемент модификатор  (минус методологии в том, что большой размер бандла)
+
+.modal__content_open {
+	opactity: 1;
+}
+.dropdown__content_open {
+	opacity: 1;
+}
+
+Установили mini-css-extract-plugin - созадёт отельные css файлы
+Настроили css модуля для генерации уникальных имён для css классов
+
+
+
+
 
