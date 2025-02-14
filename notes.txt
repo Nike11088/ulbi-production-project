@@ -147,3 +147,10 @@ resolve: {
 1.7 Организация стилей. Добавляем темы
 
 Добавили ThemeProvider и ThemeContext и две темы
+
+
+
+1.8 classNames создаем git репозиторий
+
+Добавили classNames helper
+
