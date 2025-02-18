@@ -190,3 +190,8 @@ Shared
 Добавлен routeConfig.tsx
 
 
+
+2.12 Navbar. Шаблоны для разработки. Первый UI Kit компонент 
+
+Созданы компоненты Navbar и AppLink
+
