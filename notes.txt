@@ -177,8 +177,16 @@ Shared
 
 1.10 Архитектура. Начинаем внедрять. Основы метка
 
-Добавили абсолютные импорты
+Добавили абсолютные импорты (Webpack Module Resolution)
 
 Организовали структуру согласно FSD
+
+
+
+2 Router, App Layout, i18n, eslint, stylelint, jest
+2.11 AppRouter. Конфиг для роутера
+
+Настроен Prettier
+Добавлен routeConfig.tsx
 
 
