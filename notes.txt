@@ -43,7 +43,7 @@ module.exports = {
 ///////////////////////////////////////////////////////////////
 
 HtmlWebpackPlugin - добавляет в сборку index.html и подключает скрипт index.js
-webpack - запускает сборку	
+webpack - запускает сборку
 ts-loader - позволяет загружать ts файлы
 resolve: {
 	extensions: ['.tsx', '.ts', '.js'], - позволяет импортировать перечислыенные файлы без написания .tsx, .ts, .js
@@ -56,12 +56,12 @@ resolve: {
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "ESNext", 
+    "module": "ESNext",
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true, 
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   },
   "ts-node": {
@@ -85,7 +85,7 @@ resolve: {
 	"typescript": "^5.7.3",
 	"webpack": "^5.69.1",
 	"webpack-cli": "^4.9.2"
-} 
+}
 
 
 
@@ -168,7 +168,7 @@ Features
 Entities
 Shared
 
-В основе - бизнес фичи и бизнес сущности 
+В основе - бизнес фичи и бизнес сущности
 
 Сущности: Пользователь, Статья, Комментарий, Корзина, Реквизиты, Договор
 Фичи: Регистрация, Покупка, Добавление в корзину, Удаление профиля, Восстановление пароля
@@ -191,7 +191,7 @@ Shared
 
 
 
-2.12 Navbar. Шаблоны для разработки. Первый UI Kit компонент 
+2.12 Navbar. Шаблоны для разработки. Первый UI Kit компонент
 
 Созданы компоненты Navbar и AppLink
 
@@ -202,3 +202,8 @@ Shared
 Добавлены file loader, svg loader
 Добавлены ThemeSwitcher, Button
 
+
+
+2.14 Sidebar. Layout приложения Метка
+
+Добавлен Sidebar
