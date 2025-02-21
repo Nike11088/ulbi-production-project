@@ -229,4 +229,6 @@ HotModuleReplacementPlugin - применяются изменения без с
 
 
 
-2.17 Babel. Extract plugin
+2.17 Babel.
+
+Установили Babel

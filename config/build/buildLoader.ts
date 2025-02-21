@@ -15,11 +15,21 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
     use: ['@svgr/webpack']
   }
 
+  const babelLoader = {
+    test: /\.(js|jsx|ts|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env']
+      }
+    }
+  }
 
   const typescriptLoader = {
     test: /\.tsx?$/,
     use: 'ts-loader',
-    exclude: /node_modules/,
+    exclude: /node_modules/
   }
 
   const cssLoader = {
@@ -38,13 +48,14 @@ export function buildLoaders({ isDev }: BuildOptions): RuleSetRule[] {
           }
         }
       },
-      'sass-loader',
+      'sass-loader'
     ]
   }
 
   return [
     svgLoader,
     fileLoader,
+    babelLoader,
     typescriptLoader,
     cssLoader
   ]
