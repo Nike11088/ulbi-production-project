@@ -207,3 +207,14 @@ Shared
 2.14 Sidebar. Layout приложения Метка
 
 Добавлен Sidebar
+
+
+
+2.15 i18n Интернационализация. Define plugin. Плагин для переводов
+
+webpack.DefinePlugin - добавляет глобальные параметры
+
+Добавлена локализация i18n
+Добавлена LangSwitcher
+
+Плагин i18n для WebStorm и VS Code помогает добавлять переводы
