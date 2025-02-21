@@ -232,3 +232,16 @@ HotModuleReplacementPlugin - применяются изменения без с
 2.17 Babel.
 
 Установили Babel
+
+
+
+2.18 Настраиваем EsLint. Исправляем ошибки
+
+Установили EsLint. Исправили ошибки в коде
+
+
+
+2.19 Stylelint. Plugin for i18next
+
+Установили Stylelint и Plugin for i18next.
+Исправили ошибки в scss

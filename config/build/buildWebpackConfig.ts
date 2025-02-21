@@ -1,7 +1,5 @@
 import { Configuration } from 'webpack'
 import { BuildOptions } from './types/config'
-import path from 'path'
-import webpack from 'webpack'
 import { buildPlugins } from './buildPlugins'
 import { buildLoaders } from './buildLoader'
 import { buildResolvers } from './buildResolvers'
