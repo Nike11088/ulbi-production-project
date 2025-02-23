@@ -21,6 +21,7 @@ export default [
   pluginReact.configs.flat.recommended,
   {
     rules: {
+      'curly': ['error', 'all'],
       'keyword-spacing': ['error', { 'after': true }],
       'space-before-blocks': ['error', 'always'],
       'quotes': ['error', 'single'],
