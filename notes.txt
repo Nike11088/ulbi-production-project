@@ -258,3 +258,10 @@ HotModuleReplacementPlugin - применяются изменения без с
 
 Добавили NotFoundPage.
 Добавили PageLoader.
+
+
+
+3 Refactor and test
+3.22 ErrorBoundary. Обработка React ошибок
+
+Добавили ErrorBoundary для отлова ошибок
