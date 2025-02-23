@@ -265,3 +265,9 @@ HotModuleReplacementPlugin - применяются изменения без с
 3.22 ErrorBoundary. Обработка React ошибок
 
 Добавили ErrorBoundary для отлова ошибок
+
+
+
+3.23 Анализ размера бандла. BundleAnalyzer
+
+Установили BundleAnalyzerPlugin для webpack
