@@ -271,3 +271,10 @@ HotModuleReplacementPlugin - применяются изменения без с
 3.23 Анализ размера бандла. BundleAnalyzer
 
 Установили BundleAnalyzerPlugin для webpack
+
+
+
+3.24 React Testing Library. Тесты на компоненты метка
+
+Установили React Testing Library
+Добавли тесты для компонентов
