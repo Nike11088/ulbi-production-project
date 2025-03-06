@@ -278,3 +278,9 @@ HotModuleReplacementPlugin - применяются изменения без с
 
 Установили React Testing Library
 Добавли тесты для компонентов
+
+
+
+3.25 Настраиваем Storybook. Декораторы. Стори кейсы на компоненты
+
+Установили Storybook
