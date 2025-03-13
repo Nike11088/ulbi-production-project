@@ -1,3 +1,5 @@
+import 'app/styles/index.scss'
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
@@ -8,6 +10,6 @@ export const parameters = {
   },
 }
 
-// addDecorator(StyleDecorator);
+// addDecorator(StyleDecorator)
 // addDecorator(ThemeDecorator(Theme.LIGHT));
 // addDecorator(RouterDecorator);
